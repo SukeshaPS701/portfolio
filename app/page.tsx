@@ -7,7 +7,7 @@ export default function Home() {
           height: "100vh",
           backgroundImage: "url('/profile.jpg')",
           backgroundSize: "cover",
-          backgroundPosition: "center 30%", // 👈 Adjusted so head is visible
+          backgroundPosition: "center 40%", // 👈 Adjusted so head is visible
           backgroundRepeat: "no-repeat",
           position: "relative",
           display: "flex",
