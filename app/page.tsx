@@ -7,7 +7,7 @@ export default function Home() {
           height: "100vh",
           backgroundImage: "url('/profile.jpg')",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "center 30%", // 👈 Adjusted so head is visible
           backgroundRepeat: "no-repeat",
           position: "relative",
           display: "flex",
@@ -27,7 +27,14 @@ export default function Home() {
         />
 
         {/* Content */}
-        <div style={{ position: "relative", zIndex: 10, padding: "30px", maxWidth: "800px" }}>
+        <div
+          style={{
+            position: "relative",
+            zIndex: 10,
+            padding: "30px",
+            maxWidth: "800px",
+          }}
+        >
           <h1 style={{ fontSize: "42px", fontWeight: "bold" }}>
             Sukesha PS
           </h1>
@@ -48,7 +55,9 @@ export default function Home() {
 
       {/* SKILLS SECTION */}
       <section style={{ padding: "60px 20px", textAlign: "center" }}>
-        <h2 style={{ fontSize: "32px", marginBottom: "20px" }}>Skills</h2>
+        <h2 style={{ fontSize: "32px", marginBottom: "20px" }}>
+          Skills
+        </h2>
 
         <p style={{ maxWidth: "800px", margin: "auto", lineHeight: 2 }}>
           Python • SQL • Java • C++ • DBMS • Data Structures • IoT • AI / ML
@@ -56,8 +65,20 @@ export default function Home() {
       </section>
 
       {/* PROJECTS SECTION */}
-      <section style={{ padding: "60px 20px", maxWidth: "1000px", margin: "auto" }}>
-        <h2 style={{ fontSize: "32px", textAlign: "center", marginBottom: "40px" }}>
+      <section
+        style={{
+          padding: "60px 20px",
+          maxWidth: "1000px",
+          margin: "auto",
+        }}
+      >
+        <h2
+          style={{
+            fontSize: "32px",
+            textAlign: "center",
+            marginBottom: "40px",
+          }}
+        >
           Projects
         </h2>
 
@@ -84,7 +105,14 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section style={{ padding: "60px 20px", textAlign: "center", background: "#111", color: "white" }}>
+      <section
+        style={{
+          padding: "60px 20px",
+          textAlign: "center",
+          background: "#111",
+          color: "white",
+        }}
+      >
         <h2 style={{ fontSize: "32px", marginBottom: "20px" }}>
           Contact
         </h2>
