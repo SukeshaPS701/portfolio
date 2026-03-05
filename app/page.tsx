@@ -1,30 +1,28 @@
 export default function Home() {
   return (
-    <main className="relative min-h-screen flex items-center justify-center text-white">
-
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center grayscale brightness-50"
-        style={{ backgroundImage: "url('/profile.jpg')" }}
-      ></div>
-
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/70"></div>
-
-      {/* Text Content */}
-      <div className="relative z-10 text-center">
-        <h1 className="text-6xl font-bold">Sukesha PS</h1>
-
-        <p className="text-2xl mt-4 text-gray-300">
-          AI / ML Developer
-        </p>
-
-        <p className="mt-6 text-gray-400 max-w-xl">
-          BCA Artificial Intelligence & Machine Learning Student.  
-          AI/ML Team Lead at GDG on Campus VC.
+    <main
+      style={{
+        height: "100vh",
+        backgroundImage: "url('/profile.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        filter: "grayscale(100%)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        color: "white",
+        textAlign: "center",
+        backgroundColor: "black",
+      }}
+    >
+      <div style={{ background: "rgba(0,0,0,0.6)", padding: "40px", borderRadius: "10px" }}>
+        <h1 style={{ fontSize: "50px" }}>Sukesha PS</h1>
+        <h2>AI / ML Developer</h2>
+        <p>
+          BCA Artificial Intelligence & Machine Learning Student <br />
+          AI/ML Team Lead at GDG on Campus VC
         </p>
       </div>
-
     </main>
   );
 }
