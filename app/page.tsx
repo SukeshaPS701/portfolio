@@ -1,65 +1,85 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen bg-black text-white px-8 py-20">
+      
+      {/* Hero */}
+      <section className="max-w-5xl mx-auto">
+        <h1 className="text-6xl font-bold mb-4">
+          Sukesha PS
+        </h1>
+
+        <p className="text-2xl text-gray-300 mb-6">
+          AI / ML Developer
+        </p>
+
+        <p className="text-gray-400 max-w-2xl">
+          BCA (Artificial Intelligence & Machine Learning) student at
+          Vivekananda College of Arts Science and Commerce, Puttur.
+          AI/ML Team Lead at GDG on Campus VC. Passionate about building
+          intelligent systems, machine learning models, and real-world AI
+          applications.
+        </p>
+      </section>
+
+      {/* Skills */}
+      <section className="max-w-5xl mx-auto mt-24">
+        <h2 className="text-3xl font-semibold mb-8">Skills</h2>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="bg-zinc-900 p-4 rounded">Python</div>
+          <div className="bg-zinc-900 p-4 rounded">SQL</div>
+          <div className="bg-zinc-900 p-4 rounded">Java</div>
+          <div className="bg-zinc-900 p-4 rounded">C++</div>
+          <div className="bg-zinc-900 p-4 rounded">DBMS</div>
+          <div className="bg-zinc-900 p-4 rounded">Data Structures</div>
+          <div className="bg-zinc-900 p-4 rounded">IoT</div>
+          <div className="bg-zinc-900 p-4 rounded">AI / ML</div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Projects */}
+      <section className="max-w-5xl mx-auto mt-24">
+        <h2 className="text-3xl font-semibold mb-8">Projects</h2>
+
+        <div className="space-y-6">
+          <div className="bg-zinc-900 p-6 rounded">
+            <h3 className="text-xl font-semibold">Spam Mail Prediction</h3>
+            <p className="text-gray-400">
+              Machine learning model that classifies emails as spam or not.
+            </p>
+          </div>
+
+          <div className="bg-zinc-900 p-6 rounded">
+            <h3 className="text-xl font-semibold">Cat & Dog Image Classifier</h3>
+            <p className="text-gray-400">
+              Deep learning model that identifies cats and dogs from images.
+            </p>
+          </div>
+
+          <div className="bg-zinc-900 p-6 rounded">
+            <h3 className="text-xl font-semibold">
+              Book Recommendation System
+            </h3>
+            <p className="text-gray-400">
+              Recommendation engine using KNN algorithm.
+            </p>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Contact */}
+      <section className="max-w-5xl mx-auto mt-24">
+        <h2 className="text-3xl font-semibold mb-6">Contact</h2>
+
+        <p className="text-gray-400">
+          GitHub: github.com/SukeshaPS701
+        </p>
+
+        <p className="text-gray-400">
+          LinkedIn: linkedin.com/in/sukesha-ps-94604231a
+        </p>
+      </section>
+
+    </main>
   );
 }
